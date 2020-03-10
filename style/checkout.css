@@ -3,10 +3,18 @@ body, html{
     box-sizing: border-box;
     text-align: center;
     background: #f0f0f0;
+    font-family: sans-serif;
 }
 
 p{
     margin: 0;
+}
+
+button{
+    padding: 15px 40px;
+    background: #ffea65;
+    border: 1px solid black;
+    outline: none;
 }
 
 img{
@@ -50,43 +58,32 @@ div.right-icon-menu{
     background-color: red;
 }
 
+span{
+    font-weight: bold;
+}
+
 /*--- END NAVBAR ---*/
 
-/*--- HEADER ---*/
-
-div.main-carousel{
-    width: 100%;
-    position: relative;
+.content-item-resume{
+    width: 90%;
+    display: flex;
+    padding: 50px 0;
+    margin: auto;
+    justify-content: space-around;
 }
 
-div.main-carousel img{
-    width: 100%;
+.image-content-resume{
+    height: 45%;
+    width: 40%;
 }
 
-/*--- END HEADER ---*/
-
-/*--- CONTENT ---*/
-
-.content-product-galery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 200px;
+.description-resume{
+    width: 55%;
+    text-align: left;
+    font-size: 13px;
 }
 
-.product-view-item{
-    width: 100%;
-    height: 100%;
+.qty-resume{
+    display: flex;
+    justify-content: space-between;
 }
-
-.top-img-galery{
-    width: 100%;
-    height: 150px;
-}
-
-.top-img-galery img{
-    object-fit: contain;
-}
-
-
-/*--- END CONTENT ---*/
-
