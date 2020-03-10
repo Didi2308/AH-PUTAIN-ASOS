@@ -70,7 +70,9 @@ div.main-carousel img{
 .content-product-galery{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 200px;
+    grid-auto-rows: 275px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
 }
 
 .product-view-item{
@@ -80,11 +82,28 @@ div.main-carousel img{
 
 .top-img-galery{
     width: 100%;
-    height: 150px;
+    height: 200px;
+    position: relative;
+}
+
+
+
+.top-img-galery::after{
+    content: "";
+    display: block;
+    right: 5px;
+    position: absolute;
+    top: 5px;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #F4E72D;
+    background-color: #F4E72D;
+    z-index: 1;
 }
 
 .top-img-galery img{
-    object-fit: contain;
+    object-fit: cover;
 }
 
 
